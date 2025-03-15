@@ -1,0 +1,8 @@
+openai~=0.28.0
+uvicorn~=0.34.0
+pymongo~=4.11.2
+fastapi~=0.115.11
+motor~=3.7.0
+pydantic~=2.10.6
+dotenv~=0.9.9
+python-dotenv~=1.0.1

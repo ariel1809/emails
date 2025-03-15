@@ -216,6 +216,10 @@ async def get_emails():
     emails = await email_collection.find().to_list(1000)
     return emails
 
+@app.get("/")
+def read_root():
+    return {"message": "Bienvenue sur mon API FastAPI déployée!"}
+
 @app.get("/emails/unresponded/", response_model=List[EmailModel])
 async def get_unresponded_emails():
     emails = await email_collection.find({"responded": False}).to_list(1000)

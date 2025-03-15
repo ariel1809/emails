@@ -1,9 +1,0 @@
-fastapi
-uvicorn[gunicorn]
-huggingface_hub
-motor
-pydantic
-bson
-imaplib
-smtplib
-email
